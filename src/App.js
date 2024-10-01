@@ -18,7 +18,7 @@ import SwamiSivananda from './Components/slider/SwamiSivananda'; // Import the n
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sivananda-ashram">
       <Navbar />
       <Header />
       <Routes >
