@@ -17,7 +17,7 @@ import Header from './Components/header/Header';
 import SwamiSivananda from './Components/slider/SwamiSivananda'; // Import the new page component
 
 function App() {
-  return (
+  return ( 
     <Router basename="/sivananda-ashram">
       <Navbar />
       <Header />
