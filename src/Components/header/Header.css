@@ -1,0 +1,110 @@
+/* Navbar Links for Desktop */
+.navbar-links {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 80px; /* Adds space between the links */
+  background-color: #fb9a0900;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar-links a {
+  text-decoration: none; /* Removes underline */
+  color: rgb(17, 16, 16); /* Text color */
+  font-size: 18px; /* Adjusts the size */
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  border-radius: 10px;
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 769px) {
+  .navbar-links {
+    gap: 80px; /* Keeps a large gap between links for bigger screens */
+  }
+
+  .navbar-links a {
+    font-size: 18px; /* Font size remains for desktop */
+    padding: 10px 15px; /* Padding remains the same */
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  /* Hide the links by default in mobile */
+  .navbar-links {
+    display: none;
+    flex-direction: column; /* Stack links vertically for smaller screens */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Reduce gap between links */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 8px;
+  }
+
+  .navbar-links a {
+    font-size: 16px; /* Slightly smaller font size on mobile */
+    padding: 8px 12px; /* Smaller padding */
+  }
+
+  /* Hamburger Menu Icon */
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger::before {
+    top: -10px;
+  }
+
+  .hamburger::after {
+    top: 10px;
+  }
+
+  /* When the menu is active */
+  .hamburger.active {
+    background-color: transparent;
+  }
+
+  .hamburger.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .hamburger.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Show the navbar-links when active */
+  .navbar-links.active {
+    display: flex;
+  }
+}

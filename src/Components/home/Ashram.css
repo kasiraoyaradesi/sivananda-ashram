@@ -1,0 +1,65 @@
+/* Style for the entire experience container */
+.experience-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid to display the experience cards */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Style for each individual card */
+.experience-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the images */
+.experience-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styling for the titles of each experience */
+.experience-card h3 {
+  font-size: 1.5em;
+  margin: 15px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Styling for the descriptions */
+.experience-card p {
+  font-size: 1em;
+  margin: 15px;
+  text-align: justify;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Remove extra space around body and content */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #10005ae2;
+}

@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+
+.gallery-item1 {
+  flex: 1 1 calc(33.333% - 20px); /* Three images per row */
+  margin: 10px;
+  overflow: hidden; /* Ensures that the image stays within the container during hover */
+}
+
+.gallery-item1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.gallery-item1 img:hover {
+  transform: scale(1.05); /* Slightly scale the image on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item1 {
+    flex: 1 1 calc(50% - 20px); /* Two images per row for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item1 {
+    flex: 1 1 100%; /* One image per row for mobile screens */
+  }
+}

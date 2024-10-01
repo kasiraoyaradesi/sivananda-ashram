@@ -1,0 +1,50 @@
+/* Ensure the slick-slide takes the full viewport height and width */
+.slick-slide { 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide img {
+  width: 100%; /* Make the image take the full width of the slide */
+  height: 50%; /* Make the image take the full height of the slide */
+  object-fit: cover; /* Cover the slide area without distorting the image */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+/* Adjust slick dots */
+.slick-dots {
+  bottom: 20px; /* Position the dots closer to the bottom of the screen */
+}
+
+/* Customize the slick arrows */
+.slick-prev, .slick-next {
+  width: 50px; /* Smaller width for arrows */
+  height: 50px; /* Smaller height for arrows */
+  z-index: 1;
+  color: #ffffff; /* Ensure arrows are visible */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: 20px; /* Position the left arrow near the edge of the screen */
+}
+
+.slick-next {
+  right: 20px; /* Position the right arrow near the edge of the screen */
+}
+
+/* Ensure smooth transitions and proper positioning */
+.slick-list {
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}

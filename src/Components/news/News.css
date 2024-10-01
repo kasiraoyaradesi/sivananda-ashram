@@ -1,0 +1,63 @@
+/* News Container Styling */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between rows */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* News Item Styling */
+.news-item {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    gap: 30px; /* Increase space between image and text */
+    border-bottom: 1px solid #ddd; /* Add a subtle border between items */
+    padding-bottom: 20px; /* Space below each news item */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.news-image img {
+    max-width: 400px; /* Increase maximum width for larger images */
+    height: 450px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.news-text {
+    flex: 1; /* Allow the text to take up the remaining space */
+}
+
+.news-text p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Hover Effects */
+.news-item:hover {
+    transform: scale(1.02); /* Slightly enlarge the entire news item */
+    background-color: #f9f9f9; /* Lighten the background color on hover */
+}
+
+.news-image img:hover {
+    transform: scale(1.05); /* Slightly scale the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .news-image {
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .news-image img {
+        max-width: 100%; /* Ensure images scale down on small screens */
+    }
+}

@@ -1,0 +1,111 @@
+/* About Ashram Section */
+.about-ashram {
+    background-color: #f8f5e5; /* Soft beige background */
+    padding: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-ashram h2 {
+    /* text-align: center; */
+    color: #000; /* Dark text */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    position: relative;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .ashram-image-container {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .ashram-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ashram-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f7d06e;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+  }
+  
+  .ashram-info {
+    flex: 1;
+    margin-left: 40px;
+    justify-content: space-around;
+  }
+  
+  .ashram-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .ashram-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ashram-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ashram-info ul li .icon {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+  
+  .ashram-info ul li .info-text {
+    font-size: 1.2em;
+  }
+  
+  .learn-more {
+    background-color: #f7d06e;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .learn-more:hover {
+    background-color: #e0b64c;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ashram-image-container {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  
+    .ashram-info {
+      margin-left: 0;
+      text-align: center;
+    }
+  }

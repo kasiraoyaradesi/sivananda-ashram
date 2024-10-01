@@ -1,0 +1,109 @@
+/* General footer styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(224, 171, 171, 0.749); /* Dark background for a modern look */
+    color: rgb(0, 0, 0); /* Light text color for contrast */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    font-weight: 500;
+}
+
+/* Social Media Section */
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media h4 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Highlight color on hover */
+}
+
+.social-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Logo Section */
+.footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    margin-left: 20px;
+}
+
+/* Contact Information Section */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-info h4 {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.contact-info p {
+    margin: 1px 0;
+    color: #000000; /* Slightly lighter text color */
+    font-size: 1.1em;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .social-media,
+    .contact-info {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+        height: 300px;
+        width: 300px;
+    }
+}

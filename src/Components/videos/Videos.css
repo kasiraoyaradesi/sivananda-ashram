@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .video-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  .video-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .video-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 320px;
+    text-align: center;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .video-card h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #d9731e; /* Matches the orange color */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .video-card {
+      max-width: 100%;
+    }
+  }
+  

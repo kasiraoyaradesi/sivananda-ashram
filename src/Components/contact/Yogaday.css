@@ -1,0 +1,94 @@
+.yoga {
+    display: flex;
+    flex-wrap: wrap; /* Ensures that elements wrap on smaller screens */
+  }
+  
+  .yoga-image img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  
+  .yoga-des {
+    margin-left: 80px;
+    flex: 1; /* Allow the text to take up the remaining space */
+  }
+  
+  .yoga-des p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .origin {
+    margin-left: 50px;
+  }
+  
+  .click {
+    margin-left: 20px;
+  }
+  
+  .button {
+    background-color: #02198897;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+    margin-left: 720px;
+  }
+  
+  .button:hover {
+    background-color: #400bc6e1;
+    color: white;
+  }
+  @media screen and (min-width: 769px) {
+    .yoga-image img {
+      width: 400px;
+      height: 400px;
+      margin-left: 50px;
+      padding-top: 25px;
+    }
+  
+    .yoga-des {
+      margin-left: 80px;
+    }
+  
+    .button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .yoga {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements on mobile */
+    }
+  
+    .yoga-image img {
+      width: 100%; /* Full width image */
+      height: auto; /* Adjust height automatically */
+      margin: 0; /* Remove side margins */
+      padding-top: 10px;
+    }
+  
+    .yoga-des {
+      margin-left: 0; /* Remove margin for mobile */
+      text-align: center; /* Center the text for a mobile-friendly layout */
+    }
+  
+    .origin, .click {
+      margin-left: 0; /* Remove unnecessary margins on mobile */
+    }
+  
+    .button {
+      margin-left: 0; /* Center the button */
+      margin-top: 20px; /* Add some space at the top */
+      padding: 12px 24px;
+      font-size: medium;
+    }
+  }
+    

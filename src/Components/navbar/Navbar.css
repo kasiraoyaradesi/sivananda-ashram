@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    background-image: url('C:/Users/LENOVO-V14 UFI/Downloads/ashram/src/Components/assets/fg.png');
+    background-size: cover; /* Adjust the background image size */
+    height: 150px;
+    padding: 0 20px; /* Add some padding */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    margin-right: 50px; /* Adjust margin as needed */
+  }
+  
+  .navbar-logo img {
+    width: 180px;
+    height: 180px; 
+    border-radius: 50%;
+  }
+  
+  .navbar-logo1 {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+  }
+  
+  .navbar-logo1 img {
+    width: 120px;
+    height: 120px; /* Adjust height to match width for a circular look */
+    border-radius: 50%;
+  }
+  
+  .navbar-title {
+    text-align: center;
+  }
+  
+  .navbar-title h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navbar-title h4 {
+    font-size: 15px;
+    color: rgb(206, 170, 136);
+    margin-top: -22px;
+  }
+  @media screen and (min-width: 769px) {
+    .navbar {
+      height: 150px; /* Keep the larger height for desktop */
+    }
+  
+    .navbar-logo img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .navbar-logo1 img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .navbar-title h1 {
+      font-size: 50px; /* Larger title font for desktop */
+    }
+  
+    .navbar-title h4 {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack elements vertically on mobile */
+      height: auto; /* Auto adjust height */
+      padding: 10px; /* Add more padding */
+      text-align: center;
+    }
+  
+    .navbar-logo img,
+    .navbar-logo1 img {
+      width: 120px; /* Make the logo smaller */
+      height: 120px;
+      margin-bottom: 10px; /* Add spacing between logos and title */
+    }
+  
+    .navbar-title h1 {
+      font-size: 30px; /* Reduce the title font size */
+    }
+  
+    .navbar-title h4 {
+      font-size: 12px; /* Smaller subtitle font */
+      margin-top: -10px; /* Adjust the margin */
+    }
+  }
+      

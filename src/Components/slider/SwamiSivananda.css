@@ -1,0 +1,58 @@
+/* Container for the entire section */
+.swami-container {
+    background-color: #ffffff; /* Light beige background for a more classic feel */
+    padding: 30px;
+    margin: 2px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: none; /* Remove modern shadow */
+    font-family: 'Georgia', serif; /* Classic serif font */
+    border: 1px solid #ddd; /* Light border for traditional look */
+  }
+  
+  /* Main title */
+  .swami-title {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #3a3a3a; /* Neutral dark gray */
+    margin-bottom: 25px;
+    font-weight: bold; /* Make the title stand out */
+    text-transform: uppercase; /* Adds a classical feel */
+  }
+  
+  /* Section wrapper */
+  .swami-section {
+    margin-bottom: 25px;
+    padding-left: 15px; /* Add a bit of indentation for each section */
+  }
+  
+  /* Subtitle for each section */
+  .swami-subtitle {
+    font-size: 1.6rem;
+    color: #5a5a5a; /* A softer gray for the subtitles */
+    margin-bottom: 8px;
+    font-style: italic; /* Traditional feel with italics */
+    border-bottom: none; /* Remove the modern border */
+  }
+  
+  /* General text styling for paragraphs */
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Larger line-height for better readability */
+    color: #2f2f2f; /* Darker text for better contrast */
+    text-align: justify;
+    margin-bottom: 18px;
+  }
+  
+  /* Add some spacing between paragraphs and sections */
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  /* Optional: add a subtle hover effect without modern aesthetics */
+  .swami-section:hover {
+    background-color: #f8f3e9; /* Subtle background change */
+    padding-left: 20px; /* Slight increase in padding for focus effect */
+    border-left: 3px solid #d3a774; /* Add a subtle traditional border */
+  }
+  
