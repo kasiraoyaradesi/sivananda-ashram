@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sivananda-ashram/static/css/main.80625461.css",
-    "main.js": "/sivananda-ashram/static/js/main.b3c223cf.js",
+    "main.js": "/sivananda-ashram/static/js/main.c58c2093.js",
     "static/js/488.ca2242b7.chunk.js": "/sivananda-ashram/static/js/488.ca2242b7.chunk.js",
     "static/media/a1.jpg": "/sivananda-ashram/static/media/a1.eb5450889ff0dd094e34.jpg",
     "static/media/n6.jpg": "/sivananda-ashram/static/media/n6.628cda54767c003ac192.jpg",
@@ -23,11 +23,11 @@
     "static/media/slick.woff": "/sivananda-ashram/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sivananda-ashram/index.html",
     "main.80625461.css.map": "/sivananda-ashram/static/css/main.80625461.css.map",
-    "main.b3c223cf.js.map": "/sivananda-ashram/static/js/main.b3c223cf.js.map",
+    "main.c58c2093.js.map": "/sivananda-ashram/static/js/main.c58c2093.js.map",
     "488.ca2242b7.chunk.js.map": "/sivananda-ashram/static/js/488.ca2242b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80625461.css",
-    "static/js/main.b3c223cf.js"
+    "static/js/main.c58c2093.js"
   ]
 }
