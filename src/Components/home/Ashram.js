@@ -31,7 +31,7 @@ const SivanandaExperience = () => {
         
         <div className="experience-card">
           <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVi75Ag0onlLgFLsKEyLDzuiVqbAs1UL0pkw&s" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTqbuN8x7hz5dAXCB456HwnDZuZO7MJAx-A&s" 
             alt="Ayurveda" 
           />
           <h3>Ayurveda</h3>
