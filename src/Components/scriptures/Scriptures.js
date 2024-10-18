@@ -10,7 +10,7 @@ const Scriptures = () => {
     },
     {
       src: process.env.PUBLIC_URL + '/images/23.jpeg',
-      content: "Content for the second image. This can include details about the image or any other relevant information."
+      content: "focused on spirituality, life wisdom, and national pride. It emphasizes devotion, the unity of the country, and the importance of spiritual growth."
     }
   ];
 
