@@ -1,63 +1,72 @@
-/* Navbar Links for Desktop */
 .navbar-links {
-  display: flex;
-  justify-content: center; /* Centers the links horizontally */
-  gap: 80px; /* Adds space between the links */
+  justify-content: center;
   background-color: #fb9a0900;
-  padding: 10px;
   position: relative;
+  font-family: 'Georgia', serif;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .navbar-links a {
-  text-decoration: none; /* Removes underline */
-  color: rgb(17, 16, 16); /* Text color */
-  font-size: 18px; /* Adjusts the size */
-  font-weight: bold;
-  padding: 10px 15px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+.navbar-li a:not(:first-child):before {
+  content: '';
+  height: 20px;
+  width: 1px;
+  background-color: #bbb;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .navbar-links a:hover {
-  text-decoration: underline;
-  border-radius: 10px;
+  color: darkgreen;
+  /* background-color: #f0f0f0; */
+  border-radius: 5px;
 }
 
-/* Media Query for Desktop */
 @media screen and (min-width: 769px) {
   .navbar-links {
-    gap: 80px; /* Keeps a large gap between links for bigger screens */
+    gap: 60px;
   }
 
   .navbar-links a {
-    font-size: 18px; /* Font size remains for desktop */
-    padding: 10px 15px; /* Padding remains the same */
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }
 
-/* Media Query for Mobile */
 @media screen and (max-width: 768px) {
-  /* Hide the links by default in mobile */
   .navbar-links {
     display: none;
-    flex-direction: column; /* Stack links vertically for smaller screens */
-    align-items: center; /* Center align items */
-    gap: 20px; /* Reduce gap between links */
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
     position: absolute;
-    top: 60px; /* Position below the navbar */
+    top: 60px;
     right: 0;
     background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
   }
 
   .navbar-links a {
-    font-size: 16px; /* Slightly smaller font size on mobile */
-    padding: 8px 12px; /* Smaller padding */
+    font-size: 18px;
+    padding: 12px 16px;
   }
 
-  /* Hamburger Menu Icon */
   .hamburger {
-    display: block; /* Show hamburger on mobile */
+    display: block;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -88,7 +97,6 @@
     top: 10px;
   }
 
-  /* When the menu is active */
   .hamburger.active {
     background-color: transparent;
   }
@@ -103,7 +111,6 @@
     top: 0;
   }
 
-  /* Show the navbar-links when active */
   .navbar-links.active {
     display: flex;
   }

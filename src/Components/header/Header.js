@@ -18,7 +18,7 @@ const Header = () => {
 
       {/* Navbar links, toggling the 'active' class based on state */}
       <div className={`navbar-links ${isActive ? 'active' : ''}`}>
-        <Link to="/">Home</Link>
+        <Link to="/">Home </Link>
         <Link to="/ashram">Ashram</Link>
         <Link to="/news">News</Link>
         <Link to="/photogallery">Photo gallery</Link>

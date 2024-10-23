@@ -31,8 +31,13 @@
 
 .news-text p {
     margin: 0; /* Remove default margin */
-    line-height: 1.6; /* Improve readability */
-    color: #333; /* Dark text color for contrast */
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
+
 }
 
 /* Hover Effects */

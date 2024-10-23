@@ -11,10 +11,12 @@ const Videos = () => {
       src: '/videos/video2.mp4', // Replace with your video paths
       title: 'Yoga Session 2',
     },
+
     {
-      src: '/videos/video3.mp4', // Replace with your video paths
-      title: 'Meditation Practice',
+      src: '/videos/video2.mp4', // Replace with your video paths
+      title: 'Yoga Session 3',
     },
+    
   ];
 
   return (

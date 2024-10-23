@@ -31,10 +31,9 @@ const AboutAshram = () => {
               <span className="info-text">4+ <br /> Gurukuls</span>
             </li>
           </ul>
-          <p>
-            Experience the spiritual and social activities performed at these ashrams. From seva to spiritual growth, these numbers represent our legacy.
-          </p>
+          
         </div>
+
       </div>
     </section>
   );

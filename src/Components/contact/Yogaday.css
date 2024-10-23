@@ -1,94 +1,187 @@
 .yoga {
-    display: flex;
-    flex-wrap: wrap; /* Ensures that elements wrap on smaller screens */
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Ensures that elements wrap on smaller screens */
+}
+
+.yoga-image img {
+  width: 10%;
+  margin-top: 60px;
+}
+
+.yoga-des {
+  margin-left: 80px;
+  flex: 1; /* Allow the text to take up the remaining space */
+}
+
+.yoga-des h1 {
+  font-weight: 500;
+  color: #000000; /* Dark color */
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-family: 'Georgia', serif;
+  font-size: 40px;
+}
+
+.yoga-des p {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.origin p {
+  margin-left: 50px;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.click {
+  margin-left: 20px;
+}
+
+.click h2 {
+  font-weight: 500;
+  color: #2c0202;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: large;
+  margin-left: 720px;
+  border: 3px solid;
+  border-radius: 10px;
+  z-index: 1;
+  transition: 5s;
+  overflow: hidden;
+  background-color: rgba(224, 171, 171, 0.749); /* Light maroon background */
+
+}
+
+/* First button child */
+
+
+/* Hover effect for button */
+.button:hover {
+  background-color: transparent;
+  color: rgb(0, 0, 0); /* Black color on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Large screen adjustments */
+@media screen and (min-width: 769px) {
   .yoga-image img {
     width: 400px;
     height: 400px;
     margin-left: 50px;
     padding-top: 25px;
   }
-  
+
   .yoga-des {
     margin-left: 80px;
-    flex: 1; /* Allow the text to take up the remaining space */
   }
-  
-  .yoga-des p {
-    margin: 0; /* Remove default margin */
-    line-height: 1.6; /* Improve readability */
-    color: #333; /* Dark text color for contrast */
-  }
-  
-  .origin {
-    margin-left: 50px;
-  }
-  
-  .click {
-    margin-left: 20px;
-  }
-  
+
   .button {
-    background-color: #02198897;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: large;
-    margin-left: 720px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
   }
-  
-  .button:hover {
-    background-color: #400bc6e1;
-    color: white;
+}
+
+/* Mobile Responsive Design for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .yoga {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    text-align: center; /* Center text for readability */
   }
-  @media screen and (min-width: 769px) {
-    .yoga-image img {
-      width: 400px;
-      height: 400px;
-      margin-left: 50px;
-      padding-top: 25px;
-    }
-  
-    .yoga-des {
-      margin-left: 80px;
-    }
-  
-    .button {
-      padding: 15px 30px;
-      font-size: 1.2rem;
-    }
+
+  .yoga-image img {
+    width: 70%; /* Full-width image */
+    height: auto; /* Automatically adjust height */
+    margin: 0; /* Remove side margins */
+    padding-top: 10px;
   }
-  @media screen and (max-width: 768px) {
-    .yoga {
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center elements on mobile */
-    }
-  
-    .yoga-image img {
-      width: 100%; /* Full width image */
-      height: auto; /* Adjust height automatically */
-      margin: 0; /* Remove side margins */
-      padding-top: 10px;
-    }
-  
-    .yoga-des {
-      margin-left: 0; /* Remove margin for mobile */
-      text-align: center; /* Center the text for a mobile-friendly layout */
-    }
-  
-    .origin, .click {
-      margin-left: 0; /* Remove unnecessary margins on mobile */
-    }
-  
-    .button {
-      margin-left: 0; /* Center the button */
-      margin-top: 20px; /* Add some space at the top */
-      padding: 12px 24px;
-      font-size: medium;
-    }
+
+  .yoga-des {
+    margin-left: 20px; /* Remove margin for mobile */
+    text-align: center; /* Center text on mobile */
   }
-    
+
+  .origin{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .click {
+    margin-left: 0; /* Remove side margins for mobile */
+    margin-right: 0; /* Align margins for mobile layout */
+    text-align: center; /* Center text and elements */
+    font-size: 8px;
+    margin-top: 35px;
+  }
+
+  .button {
+    margin-left: 40%; /* Center the button */
+    margin-top: 20px; /* Add space above button */
+    padding: 12px 24px; /* Adjust padding for mobile */
+    font-size: medium; /* Keep font size readable */
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile screen adjustments */
+@media screen and (max-width: 768px) {
+  .yoga {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    text-align: center; /* Center text for readability */
+  }
+
+  .yoga-image img {
+    width: 70%; /* Full-width image */
+    height: auto; /* Automatically adjust height */
+    margin: 0; /* Remove side margins */
+    padding-top: 10px;
+  }
+
+  .yoga-des {
+    margin-left: 20px; /* Remove margin for mobile */
+    text-align: center; /* Center text on mobile */
+  }
+
+  .origin{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .click {
+    margin-left: 0; /* Remove side margins for mobile */
+    margin-right: 0; /* Align margins for mobile layout */
+    text-align: center; /* Center text and elements */
+    font-size: 8px;
+    margin-top: 35px;
+  }
+
+  .button {
+    margin-left: 40%; /* Center the button */
+    margin-top: 20px; /* Add space above button */
+    padding: 12px 24px; /* Adjust padding for mobile */
+    font-size: medium; /* Keep font size readable */
+    margin-bottom: 20px;
+  }
+
+}

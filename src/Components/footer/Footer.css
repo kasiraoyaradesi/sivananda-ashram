@@ -1,109 +1,111 @@
-/* General footer styling */
+/* Footer Styling */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: rgba(224, 171, 171, 0.749); /* Dark background for a modern look */
-    color: rgb(0, 0, 0); /* Light text color for contrast */
+    background-color: rgba(224, 171, 171, 0.749); /* Light maroon background */
+    color: #fff; /* White text */
     padding: 40px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
-    font-weight: 500;
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    flex-wrap: wrap; /* Responsive wrapping */
+    align-items: center; /* Align items vertically */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    transition: background-color 0.4s ease; /* Smooth background transition */
 }
 
-/* Social Media Section */
+
+
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 250px; /* Minimum width for smaller screens */
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
 .social-media {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-left: 250px;
 }
 
-.social-media h4 {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-}
 
-.social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.social-icons li {
+.contact-info h4, .social-media h4 {
+    font-size: 1.5em;
     margin-bottom: 10px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #0077b5; /* Highlight color on hover */
-}
-
-.social-icon {
-    margin-right: 10px; /* Space between icon and text */
-}
-
-/* Logo Section */
-.footer-logo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer-logo img {
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 10px; /* Rounded corners for a modern look */
-    margin-left: 20px;
-}
-
-/* Contact Information Section */
-.contact-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.contact-info h4 {
-    margin-bottom: 20px;
-    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000000; /* Dark maroon color for a spiritual feel */
+    letter-spacing: 0.5px; /* Slight spacing for elegance */
+    line-height: 1.2; /* Compact line height for closeness */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    font-family: 'Georgia', serif; /* A classic, elegant serif font */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and lift transition */
 }
 
 .contact-info p {
-    margin: 1px 0;
-    color: #000000; /* Slightly lighter text color */
-    font-size: 1.1em;
+    margin: 5px 0;
+    line-height: 1.6;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000000;
+    transition: color 0.3s ease; /* Smooth text color transition */
 }
 
-/* Responsive behavior */
+.contact-info p:hover {
+    color: #333; /* Slightly darker text on hover */
+}
+
+.social-media ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+.social-icons a:hover {
+    color: #ff5722; /* Highlight color on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.social-icon {
+    font-size: 1.5em; /* Increase icon size */
+    margin-right: 10px; /* Space between icon and text */
+    transition: transform 0.3s ease; /* Smooth icon scaling transition */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Icon scales up on hover */
+}
+
+.footer-logo img {
+    width: 270px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        text-align: center;
     }
 
-    .social-media,
-    .contact-info {
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-logo {
-        margin-bottom: 20px;
-        height: 300px;
-        width: 300px;
+    .footer-logo img {
+        margin-top: 20px; /* Add margin for spacing */
     }
 }

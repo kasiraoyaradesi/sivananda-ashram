@@ -1,77 +1,104 @@
 .know-more-container {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  justify-content: space-between; /* Space between content and image */
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f9f5e9;
   border-radius: 8px;
   margin: 20px 0;
-  gap: 20px; /* Adds space between text and image */
-}
-
-.know-more-content {
-  flex: 1; /* Take up available space */
+  gap: 20px;
 }
 
 .know-more-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #333;
+  font-size: 3em;
+  font-weight: 500;
+  color: #2c0202;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+.know-more-content h2:hover {
+  color: #008080;
+}
+
+.know-more-content.active {
+  background-color: #ffe5b5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.know-more-content {
+  background-color: #f9f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .know-more-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-family: 'Georgia', serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: left;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .know-more-button {
-  background-color: #ffff0097;
-  color: rgb(0, 0, 0);
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: solid 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   font-size: large;
+  
 }
 
 .know-more-button:hover {
-  background-color: #493f06e1;
-  color: white;
+  background-color: #ffe60928;
+  color: rgba(0, 0, 0, 0.774);
+  
 }
 
 .know-more-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
+  flex-shrink: 0;
 }
 
 .know-more-image img {
-  max-width: 250px; /* Control the image size */ 
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
+
 @media (max-width: 768px) {
   .know-more-container {
-    flex-direction: column; /* Stack content vertically on smaller screens */
+    flex-direction: column;
     text-align: center;
   }
 
   .know-more-image img {
-    margin: 20px 0; /* Add margin between content and image */
-    max-width: 100%; /* Make sure the image scales within container width */
+    margin: 20px 0;
+    max-width: 100%;
   }
   
   .know-more-content h2 {
-    font-size: 1.5rem; /* Adjust font size for better readability on small screens */
+    font-size: 1.5rem;
   }
 
   .know-more-content p {
-    font-size: 1rem; /* Slightly smaller font for mobile */
+    font-size: 1rem;
   }
 
   .know-more-button {
-    padding: 8px 16px; /* Adjust button size for smaller screens */
+    padding: 8px 16px;
     font-size: medium;
   }
 }

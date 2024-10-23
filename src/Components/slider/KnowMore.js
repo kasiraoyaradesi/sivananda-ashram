@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import MasterSivananda from '../assets/MasterSivananda.jpg'
 import './KnowMore.css'; // Import the CSS file for styling
 
 const KnowMore = () => {
@@ -28,7 +29,7 @@ const KnowMore = () => {
         <button className="know-more-button" onClick={handleKnowMoreClick}>KNOW MORE</button>
       </div>
       <div className="know-more-image">
-        <img src="https://m.media-amazon.com/images/I/61Y1WFTCnmL._AC_UF1000,1000_QL80_.jpg" alt="Swami Sivananda" />
+        <img src={MasterSivananda} alt="Swami Sivananda" />
       </div>
     </div>
   );
