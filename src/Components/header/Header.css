@@ -1,39 +1,51 @@
+/* Navbar Links */
 .navbar-links {
   justify-content: center;
-  background-color: #fb9a0900;
+  background-color: rgba(244, 240, 231, 0.541);
   position: relative;
   font-family: 'Georgia', serif;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  box-shadow: 0px 1px 5px;
 }
 
+/* Individual link styling */
 .navbar-links a {
   text-decoration: none;
   color: #333333;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover state for the links */
+.navbar-links a:hover {
+  color: darkgreen;
+  transform: translateY(-3px) scale(1.05); /* Upward movement and scaling */
+}
+
+/* Active state for the navbar */
+.navbar-links.active {
+  display: flex;
+  transform: scale(1.05); /* Slightly scale up the navbar */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Separator between links */
 .navbar-li a:not(:first-child):before {
   content: '';
   height: 20px;
   width: 1px;
-  background-color: #bbb;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-
-.navbar-links a:hover {
-  color: darkgreen;
-  /* background-color: #f0f0f0; */
-  border-radius: 5px;
-}
-
+/* Large screen (PC) adjustments */
 @media screen and (min-width: 769px) {
   .navbar-links {
     gap: 60px;
@@ -45,6 +57,7 @@
   }
 }
 
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-links {
     display: none;
@@ -63,8 +76,10 @@
   .navbar-links a {
     font-size: 18px;
     padding: 12px 16px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   }
 
+  /* Hamburger menu icon */
   .hamburger {
     display: block;
     position: absolute;
@@ -113,5 +128,7 @@
 
   .navbar-links.active {
     display: flex;
+    transform: scale(1.05); /* Slightly scale up the navbar */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
   }
 }
