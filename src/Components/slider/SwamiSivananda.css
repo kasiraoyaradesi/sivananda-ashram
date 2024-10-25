@@ -20,7 +20,6 @@
   text-transform: capitalize; /* Capitalizes the first letter of each word */
   font-family: 'Georgia', serif; /* A classic, elegant serif font */
   text-align: center; /* Center align the text */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Section wrapper */
@@ -45,7 +44,6 @@
   text-transform: capitalize; /* Capitalizes the first letter of each word */
   font-family: 'Georgia', serif; /* A classic, elegant serif font */
   text-align: center; /* Center align the text */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* General text styling for paragraphs */
@@ -100,3 +98,42 @@ p:last-of-type {
 
 /* Add different border colors for different sections if desired */
 
+@media (max-width: 768px) {
+  .swami-title {
+    font-size: 2rem; /* Reduced font size for smaller screens */
+  }
+
+  .swami-section {
+    margin-bottom: 15px; /* Further reduced margin for smaller screens */
+    padding: 10px; /* Reduced padding for better fit */
+  }
+
+  .swami-subtitle {
+    font-size: 1.5rem; /* Further reduced subtitle size for smaller screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Further reduced paragraph font size */
+    line-height: 1.4; /* Adjusted line height for closer spacing */
+    margin-bottom: 10px; /* Further reduced bottom margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .swami-title {
+    font-size: 1.6rem; /* Further reduced font size for mobile */
+  }
+
+  .swami-section {
+    padding: 8px; /* Further reduced padding */
+    margin-bottom: 10px; /* Further reduced margin */
+  }
+
+  .swami-subtitle {
+    font-size: 1.3rem; /* Further reduced subtitle size */
+  }
+
+  p {
+    font-size: 0.8rem; /* Further reduced paragraph font size */
+  }
+}

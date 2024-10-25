@@ -1,51 +1,67 @@
-/* Ensure the slick-slide takes the full viewport height and width */
-.slick-slide { 
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+/* General Slider Styles */
+.slider-container {
+  width: 100%;
+  max-width: 1200px; /* Adjusts maximum width for larger screens */
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10px
+}
+
+.slick-slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slick-slide img {
-  width: 100%; /* Make the image take the full width of the slide */
-  height: 50%; /* Make the image take the full height of the slide */
-  object-fit: cover; /* Cover the slide area without distorting the image */
-  margin: 0; /* Remove any margin */
-  padding: 0; /* Remove any padding */
+  display: block;
+  width: 100%; /* Ensures the image takes full width */
+  height: auto;
+  margin: 0 auto;
 }
 
-/* Adjust slick dots */
+/* Ensures dots are close to the image */
 .slick-dots {
-  bottom: 20px; /* Position the dots closer to the bottom of the screen */
+  position: absolute;
+  bottom: 10px; /* Adjusted to bring dots closer to the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
-/* Customize the slick arrows */
-.slick-prev, .slick-next {
-  width: 50px; /* Smaller width for arrows */
-  height: 50px; /* Smaller height for arrows */
-  z-index: 1;
-  color: #ffffff; /* Ensure arrows are visible */
-}
-
-.slick-prev:before, .slick-next:before {
-  font-size: 30px;
-}
-
-.slick-prev {
-  left: 20px; /* Position the left arrow near the edge of the screen */
-}
-
-.slick-next {
-  right: 20px; /* Position the right arrow near the edge of the screen */
-}
-
-/* Ensure smooth transitions and proper positioning */
 .slick-list {
-  transition: transform 0.5s ease-in-out;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  padding-bottom: 20px; /* Reduce padding below the slider */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    width: 90%; /* Adjusts the width of the slider on mobile */
+  }
+
+  .slick-dots {
+    bottom: 5px; /* Reduces the space between dots and images on mobile */
+  }
+
+  .slick-slide img {
+    height: auto; /* Ensures the images are responsive on mobile */
+  }
+}
+
+/* Additional small screen adjustments */
+@media screen and (max-width: 480px) {
+  .slider-container {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: 5px;
+  }
+
+  .slick-slide img {
+    width: 100%; /* Ensures image fills the width on smaller screens */
+    height: auto;
+  }
 }

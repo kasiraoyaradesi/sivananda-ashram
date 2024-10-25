@@ -1,75 +1,66 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Georgia', serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-    background-color: #f9f9f9;
-  }
-  
-  .gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .gallery-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 1200px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover {
-    transform: scale(1.02); /* Slight hover effect */
-  }
-  
-  .gallery-image {
-    width: 45%;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-  
-  .gallery-content {
-    font-family: 'Georgia', serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
+.scriptures-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.1); 
 
-  }
-  
-  .gallery-content p {
-    margin: 0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .gallery-item {
-      flex-direction: column;
-    }
-  
-    .gallery-image {
-      width: 100%;
-      margin: 0 0 20px 0;
-    }
-  
-    .gallery-content {
-      width: 100%;
-    }
-  }
-  
+
+}
+
+.scriptures-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600px;
+
+}
+
+.scriptures-heading1 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  color: #000000;
+margin-top: 100px;}
+
+.big-image img {
+  max-width: 200%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); 
+
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 450px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 50px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); 
+margin-bottom: 50px;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-content {
+  padding: 15px;
+}
+
+.gallery-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}

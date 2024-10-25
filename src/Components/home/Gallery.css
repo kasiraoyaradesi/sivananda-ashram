@@ -1,0 +1,53 @@
+
+.main {
+    margin: 100px;
+}
+
+.gallery-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 2px; /* Space between images */
+    background-color: #fff; /* White background */
+    padding: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    box-shadow: 20px gray ;
+    column-gap: 0px;
+}
+
+/* Individual gallery item */
+.gallery-item1 {
+    width: 100%; /* Full width of the grid item */
+    border-radius: px; /* Rounded corners for images */
+    overflow: hidden; /* Ensures the rounded corners cut off the image edges */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Image inside the gallery item */
+.gallery-item1 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the area properly without distortion */
+    border-radius: 5px; /* Keeps the rounded corners on the image */
+}
+
+/* Hover effect for gallery items */
+.gallery-item1:hover {
+    transform: scale(1); /* Slight zoom effect on hover */
+    border-radius: px; /* Ensure border-radius remains the same */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-container1 {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens (2 columns) */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container1 {
+        grid-template-columns: 1fr; /* Single column on very small devices */
+        gap: 8px; /* Smaller gap for very small screens */
+    }
+}

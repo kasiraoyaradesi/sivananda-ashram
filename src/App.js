@@ -15,6 +15,9 @@ import News from './Components/news/News';
 import KnowMore from './Components/slider/KnowMore'; // Import the KnowMore component
 import Header from './Components/header/Header';
 import SwamiSivananda from './Components/slider/SwamiSivananda'; // Import the new page component
+import Gallery from './Components/home/Gallery';
+import DonatePage from './Components/donate/DonatePage';
+
 
 function App() {
   return ( 
@@ -27,6 +30,7 @@ function App() {
               <Home />
               <AboutAshram />  {/* These will now only be visible on the home page */}
               <AshramServices />
+              <Gallery />
             </>
           } 
         />
@@ -39,6 +43,8 @@ function App() {
         <Route path="/videos" element={<Videos />} /> 
         <Route path="/knowmore" element={<KnowMore />} />
         <Route path="/swami-sivananda" element={<SwamiSivananda />} />
+        <Route path="/donate" element={<DonatePage />} /> {/* New Donate route */}
+
 
       </Routes>
       <Footer />

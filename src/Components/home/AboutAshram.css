@@ -1,179 +1,158 @@
-/* Main section styling */
 .about-ashram {
-  padding: 40px;
-  background-color: #0880f80f; /* Soft background color */
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
-  
+  padding: 15px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .about-ashram h2 {
-  font-size: 3em; /* Larger size for prominence */
-  font-weight: 500; /* Semi-bold for readability */ 
-  color: #2c0202; /* Dark maroon color for a spiritual feel */
-  letter-spacing: 0.5px; /* Slight spacing for elegance */
-  line-height: 1.2; /* Compact line height for closeness */
-  text-transform: capitalize; /* Capitalizes the first letter of each word */
-  font-family: 'Georgia', serif; /* A classic, elegant serif font */
-  text-align: center; /* Center align the text */
-  margin: 20px 0; /* Margin for spacing */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #000000e0;
+  margin-bottom: 15px;
+  font-size: 2.5em; /* Reduced size */
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-weight: 550;
+
 
 }
 
-.ashram-info h3 {
-  font-size: 28px;
-  font-weight: 600; /* Semi-bold for readability */
-  color: #2c0202; /* Dark maroon color for a spiritual feel */
-  letter-spacing: 0.5px; /* Slight spacing for elegance */
-  line-height: 1.2; /* Compact line height for closeness */
-  text-transform: capitalize; /* Capitalizes the first letter of each word */
-  font-family: 'Georgia', serif; /* A classic, elegant serif font */
-  text-align: center; /* Center align the text */
-  margin: 20px 0; /* Margin for spacing */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-  color: #00796b; /* Modern teal color */
-}
-
-
-/* Flexbox container for image and info */
 .about-container {
-  display: flex; /* Flexbox layout */
-  flex-wrap: wrap; /* Allow wrapping */
-  justify-content: space-between; /* Space between elements */
-  align-items: flex-start; /* Align items to the start for better alignment */
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-/* Image container styling */
 .ashram-image-container {
-  flex: 1; /* Allow this to take up space */
+  flex: 1;
+  margin-right: 15px;
   position: relative;
-  margin-right: 10px; /* Reduced right margin for spacing */
-  display: flex; /* Use flex to align children */
-  flex-direction: column; /* Align children vertically */
-  align-items: center; /* Center children horizontally */
-  transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .ashram-image-container img {
-  width: 80%; /* Reduce width to 70% of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-top: 0; /* Align image at the top */
-  transition: transform 0.3s ease; /* Smooth transition for image */
-  margin-left: 100px;
-}
-
-.ashram-image-container:hover {
-  transform: scale(1.05); /* Slightly zoom in on hover */
+  width: 80%;
+  height: 500px;
+  border-radius: 10px; /* Reduced border-radius */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 180px;
 }
 
 .ashram-caption {
   position: absolute;
-  bottom: 1px;
-  left: 110px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px 8px;
+  font-size: 0.8em; /* Reduced font-size */
+  font-weight: bold;
   border-radius: 5px;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  bottom: 480px; /* Adjusted for smaller size */
+  margin-left: 180px;
+
 }
 
-/* Styling the info with circular elements */
 .ashram-info {
-  flex: 1; /* Allow this to take up space */
-  padding: 10px; /* Reduced padding for closer alignment */
-  background-color: #ffffff; /* White background for the info section */
-  border: 2px solid #00796b; /* Border color matching the header */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  margin-right: 220px;
+  flex: 1;
+  margin-left: 80px; /* Reduced margin */
 }
 
-.ashram-info:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
-}
+.ashram-info h3 {
+  font-size: 1.4em; /* Reduced size */
+  margin-left: 25px;
+  line-height: 1.2px;
 
+}
+.ashram-info p {
+  font-size:12px; /* Reduced size */
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
 
 .ashram-info ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
+  list-style: none;
+  padding: 0;
 }
 
 .ashram-info ul li {
   display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  transition: transform 0.3s ease; /* Smooth transition for each list item */
+  flex-direction: column;
+  margin-bottom: 15px; /* Reduced margin */
+  margin-left: 30px;
+}
+
+.ashram-info ul li .icon {
+  font-size: 1.5em; /* Reduced icon size */
+  margin-bottom: 5px;
+}
+
+.about {
+  font-weight: bold;
+  margin-left: 3px; /* Reduced margin */
+}
+
+.ashram-info ul li p {
+  font-size: 1em; /* Reduced text size */
+  color: #000000;
+  font-weight: bold;
+  margin: 0;
+    font-family: 'Georgia', serif;
+
+}
+
+.learn-more {
+  background-color: #f7d06e;
+  color: #000;
+  padding: 8px 16px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 1em; /* Reduced font size */
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.learn-more:hover {
+  background-color: #e0b64c;
+}
+
+/* Hover and Animation Effects */
+.ashram-info ul li {
+  transition: transform 0.3s ease-in-out;
 }
 
 .ashram-info ul li:hover {
-  transform: translateX(10px); /* Slide effect on hover */
+  transform: scale(1.05);
 }
 
-.icon {
-  font-size: 40px;
-  margin-right: 15px;
-  transition: transform 0.3s ease; /* Smooth transition for icon */
+.ashram-info h2 {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.ashram-info ul li:hover .icon {
-  transform: scale(1.2); /* Scale up the icon on hover */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.info-text {
-  font-size: 16px;
-  text-align: left;
-  position: relative; /* To position pseudo-element */
-}
-
-.circular-text {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border: 5px solid #1e90ff; /* Circle border */
-  border-radius: 50%;
-  line-height: 90px; /* Center text vertically */
-  margin-right: 15px;
-  transition: transform 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effect for circular text */
-.ashram-info ul li:hover .circular-text {
-  transform: rotate(360deg); /* Rotate effect on hover */
-}
-
-.ashram-info p {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Adding responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column; /* Stack on smaller screens */
-  }
-
-  .ashram-info {
-    text-align: center; /* Center align for smaller screens */
+    flex-direction: column;
+    align-items: center;
   }
 
   .ashram-image-container {
-    margin-bottom: 20px; /* Bottom margin for spacing */
+    margin-right: 0;
+    margin-bottom: 15px; /* Reduced margin */
+  }
+
+  .ashram-info {
+    margin-left: 0;
+    text-align: center;
   }
 }

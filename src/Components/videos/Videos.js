@@ -1,37 +1,34 @@
-import React from 'react';
-import './Videos.css'; // Import CSS file for styling
+import React from "react";
+import './Videos.css';
 
-const Videos = () => {
-  const videos = [
-    {
-      src: '/videos/video1.mp4', // Replace with your video paths
-      title: 'Yoga Session 1',
-    },
-    {
-      src: '/videos/video2.mp4', // Replace with your video paths
-      title: 'Yoga Session 2',
-    },
+const videos = [
+  { id: 1, title: "Title 1", videoLink: "#" },
+  { id: 2, title: "Title 2", videoLink: "#" },
+  { id: 3, title: "Title 3", videoLink: "#" },
+  { id: 4, title: "Title 4", videoLink: "#" },
+  { id: 5, title: "Title 5", videoLink: "#" },
+  { id: 6, title: "Title 6", videoLink: "#" }
+];
 
-    {
-      src: '/videos/video2.mp4', // Replace with your video paths
-      title: 'Yoga Session 3',
-    },
-    
-  ];
-
+const VideoGrid = () => {
   return (
-    <div className="video-container">
-      <h2>Our Videos</h2>
+    <div className="video-section">
+      <h2>Videos</h2>
+      <h4>Watch our Ashram Videos</h4>
       <div className="video-grid">
-        {videos.map((video, index) => (
-          <div key={index} className="video-card">
-            <div className="video-wrapper">
-              <video controls>
-                <source src={video.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        {videos.map((video) => (
+          <div className="video-card" key={video.id}>
+            <div className="video-thumbnail">
+              <a href={video.videoLink}>
+                <div className="logo-wrapper">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZUkfDjFgdfs6NFdA0UQ8WDZYCIfb3bhdCw&s"
+                    alt={video.title}
+                  />
+                </div>
+              </a>
             </div>
-            <h3>{video.title}</h3>
+            <p className="video-title">{video.title}</p>
           </div>
         ))}
       </div>
@@ -39,4 +36,4 @@ const Videos = () => {
   );
 };
 
-export default Videos;
+export default VideoGrid;

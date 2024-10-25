@@ -1,3 +1,4 @@
+/* General Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -5,36 +6,36 @@
     background-image: url('C:/Users/LENOVO-V14 UFI/Downloads/ashram/src/Components/assets/fg.png');
     background-size: cover; /* Adjust the background image size */
     height: 150px;
-    padding: 0 20px; /* Add some padding */
-  }
-  
-  .navbar-logo {
+    padding: 0 10px; /* Reduce padding to minimize whitespace */
+}
+
+.navbar-logo {
     display: flex;
-    margin-right: 50px; /* Adjust margin as needed */
-  }
-  
-  .navbar-logo img {
+    margin-right: 20px; /* Reduce margin as needed to minimize whitespace */
+}
+
+.navbar-logo img {
     width: 180px;
     height: 180px; 
     border-radius: 50%;
-  }
-  
-  .navbar-logo1 {
+}
+
+.navbar-logo1 {
     display: flex;
     align-items: center; /* Center logo vertically */
-  }
-  
-  .navbar-logo1 img {
+}
+
+.navbar-logo1 img {
     width: 120px;
     height: 120px; /* Adjust height to match width for a circular look */
     border-radius: 50%;
-  }
-  
-  .navbar-title {
+}
+
+.navbar-title {
     text-align: center;
-  }
-  
-  .navbar-title h1 {
+}
+
+.navbar-title h1 {
     font-size: 50px;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -42,14 +43,12 @@
     line-height: 1.2; /* Compact line height for closeness */
     text-transform: capitalize; /* Capitalizes the first letter of each word */
     font-family: 'Georgia', serif; /* A classic, elegant serif font */
-    text-align: center; /* Center align the text */
     margin: 20px 0; /* Margin for spacing */
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
-  
-  }
-  
-  .navbar-title h4 {
+}
+
+.navbar-title h4 {
     font-size: 15px;
     color: rgb(206, 170, 136);
     margin-top: -22px;
@@ -58,55 +57,80 @@
     font-style: normal;
     line-height: 1.8;
     letter-spacing: 0.5px;
-    text-align: center;
     margin-bottom: 20px;
+}
 
-  }
-  @media screen and (min-width: 769px) {
+/* Large screen (PC) adjustments */
+@media screen and (min-width: 769px) {
     .navbar {
-      height: 150px; /* Keep the larger height for desktop */
+        height: 150px; /* Keep the larger height for desktop */
+        padding: 0 20px; /* Add padding only on larger screens */
     }
-  
+
     .navbar-logo img {
-      width: 180px;
-      height: 180px;
+        width: 180px;
+        height: 180px;
     }
-  
+
     .navbar-logo1 img {
-      width: 120px;
-      height: 120px;
+        width: 120px;
+        height: 120px;
     }
-  
+
     .navbar-title h1 {
-      font-size: 50px; /* Larger title font for desktop */
+        font-size: 50px; /* Larger title font for desktop */
     }
-  
+
     .navbar-title h4 {
-      font-size: 15px;
+        font-size: 15px;
     }
-  }
-  @media screen and (max-width: 768px) {
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
     .navbar {
-      flex-direction: column; /* Stack elements vertically on mobile */
-      height: auto; /* Auto adjust height */
-      padding: 10px; /* Add more padding */
-      text-align: center;
+        flex-direction: column; /* Stack elements vertically on mobile */
+        height: auto; /* Auto adjust height */
+        padding: 10px; /* Add padding for mobile */
+        text-align: center;
     }
-  
+
     .navbar-logo img,
     .navbar-logo1 img {
-      width: 120px; /* Make the logo smaller */
-      height: 120px;
-      margin-bottom: 10px; /* Add spacing between logos and title */
+        width: 100px; /* Make the logo smaller for mobile */
+        height: 100px; /* Keep them circular */
+        margin-bottom: 10px; /* Add spacing between logos and title */
     }
-  
+
     .navbar-title h1 {
-      font-size: 30px; /* Reduce the title font size */
+        font-size: 24px; /* Further reduce the title font size for smaller screens */
+        margin: 10px 0; /* Adjust margin */
     }
-  
+
     .navbar-title h4 {
-      font-size: 12px; /* Smaller subtitle font */
-      margin-top: -10px; /* Adjust the margin */
+        font-size: 12px; /* Smaller subtitle font */
+        margin-top: -10px; /* Adjust the margin */
     }
-  }
-      
+}
+
+/* Specific styles for devices with size 412x914 */
+@media screen and (max-width: 412px) {
+    .navbar-logo img,
+    .navbar-logo1 img {
+        width: 80px; /* Adjust logos for smaller devices */
+        height: 80px; 
+    }
+
+    .navbar-title h1 {
+        font-size: 30px; /* Even smaller title font */
+    }
+
+    .navbar-title h4 {
+        font-size: 10px; /* Smaller subtitle font for very small screens */
+        margin-top: -5px; /* Adjust the margin */
+    }
+
+    .navbar {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
