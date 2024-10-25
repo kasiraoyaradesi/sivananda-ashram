@@ -1,166 +1,160 @@
-/* AshramServices.css */
-
 .ashram-services {
     text-align: center;
     padding: 100px 80px;
     background-color: #f9f9f9;
     margin-bottom: 50px;
-}
-
-.section-title {
-    margin-bottom: 15px; /* Space below the title */
+  }
+  
+  .section-title {
+    margin-bottom: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #0f0000;
     font-weight: bold;
     font-size: 35px;
-    line-height: 0.5; /* Adjust line height for better spacing */
-}
-
-.section-description {
+    line-height: 0.5;
+  }
+  
+  .section-description {
     color: #333;
-    margin-bottom: 50px; /* Space below the description */
-}
-
-.section-description p {
+    margin-bottom: 50px;
+  }
+  
+  .section-description p {
     margin: 10px 0;
     color: #555;
-    margin-bottom: 50px; /* Additional space for separation */
-    margin-left: 30px; /* Indentation if needed */
+    margin-bottom: 50px;
+    margin-left: 30px;
     font-size: 16px;
     text-align: center;
-}
-
-.service-cards {
+  }
+  
+  .service-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; /* More space between cards */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.service-card {
-    position: relative; /* Position relative to parent for absolute positioning of overlay */
-    overflow: hidden; /* Hide overflow to clip the overlay */
+    gap: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card {
+    position: relative;
+    overflow: hidden;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-/* Add the hover overlay */
-.service-card::before {
-    content: ""; /* Required for pseudo-element */
-    position: absolute; /* Position it absolutely within the card */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: 0; /* Align to the bottom */
-    background-color: rgba(0, 128, 0, 0.6); /* Change to your desired color */
-    height: 0; /* Start with no height */
-    transition: height 0.6s ease; /* Smooth transition for height */
-    z-index: 0; /* Place behind the card content */
-}
-
-/* Bring the content above the overlay */
-.service-card h3,
-.service-card img,
-.service-description {
-    position: relative; /* Position them relative to the card */
-    z-index: 1; /* Bring them above the overlay */
-    color: #000000; /* Default text color */
-}
-
-/* Hover effect to expand the overlay and change text color */
-.service-card:hover::before {
-    height: 100%; /* Expand overlay on hover */
-}
-
-.service-card:hover {
+  }
+  
+  .service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 128, 0, 0.6);
+    height: 0;
+    transition: height 0.6s ease;
+    z-index: 0;
+  }
+  
+  .service-card h3,
+  .service-card img,
+  .service-description {
+    position: relative;
+    z-index: 1;
+    color: #000000;
+  }
+  
+  .service-card:hover::before {
+    height: 100%;
+  }
+  
+  .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Change text color to white on hover */
-.service-card:hover h3,
-.service-card:hover .service-description {
-    color: #ffffff; /* Change text color to white */
-}
-
-.service-card img {
-    width: 50px; /* Increased image size */
+  }
+  
+  .service-card:hover h3,
+  .service-card:hover .service-description {
+    color: #ffffff;
+  }
+  
+  .service-card img {
+    width: 50px;
     height: 50px;
     margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 20px; /* Larger font for service title */
-    font-weight: 700; /* Bold title */
+  }
+  
+  .service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Georgia', serif;
-}
-
-.service-card hr {
+  }
+  
+  .service-card hr {
     width: 100%;
     border: 1px solid #d2cece;
     margin-bottom: 20px;
-}
-
-.service-description {
-    font-size: 16px; /* Larger and clearer for readability */
-    color: #666; /* Default text color for description */
+  }
+  
+  .service-description {
+    font-size: 16px;
+    color: #666;
     font-family: 'Georgia', serif;
-    line-height: 1.8; /* More spacing for readability */
+    line-height: 1.8;
     padding: 0 15px;
-    font-weight: 300; /* Lighter text for a modern look */
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
+    font-weight: 300;
+  }
+  
+  @media (max-width: 1024px) {
     .service-cards {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-
+  
     .section-title {
-        font-size: 28px;
+      font-size: 28px;
     }
-
+  
     .section-description {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .service-cards {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-
+  
     .section-title {
-        font-size: 24px;
+      font-size: 24px;
     }
-
+  
     .section-description {
-        font-size: 14px;
+      font-size: 14px;
     }
-
+  
     .service-card {
-        padding: 20px;
+      padding: 20px;
     }
-
+  
     .service-card img {
-        width: 40px; /* Reduced size for smaller screens */
-        height: 40px;
+      width: 40px;
+      height: 40px;
     }
-
+  
     .service-card h3 {
-        font-size: 18px;
+      font-size: 18px;
     }
-
+  
     .service-description {
-        font-size: 14px;
+      font-size: 14px;
     }
-}
+  }
+  
