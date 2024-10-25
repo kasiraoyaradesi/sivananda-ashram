@@ -1,18 +1,14 @@
-/* DonatePage.css */
-
 .donate-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1px; /* Adds gap between the form and image */
+    gap: 1px;
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
     font-family: 'Georgia', serif;
-
   }
   
-  /* Form container */
   .donate-form-container {
     flex: 1;
     padding: 20px;
@@ -23,7 +19,6 @@
   .donate-form-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    
   }
   
   .donate-form label {
@@ -53,20 +48,16 @@
     opacity: 0.9;
   }
   
-  /* Image container */
-
-  
   .donate-image-container img {
     max-width: 100%;
     max-height: 376px;
     object-fit: cover;
   }
   
-  /* Responsive layout for smaller screens */
   @media (max-width: 768px) {
     .donate-container {
       flex-direction: column;
-      gap: 20px; /* Reduces gap in mobile view */
+      gap: 20px;
     }
   
     .donate-image-container {

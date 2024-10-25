@@ -1,6 +1,6 @@
 .yoga {
   display: flex;
-  flex-wrap: wrap; /* Ensures that elements wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .yoga-image img {
@@ -10,17 +10,17 @@
 
 .yoga-des {
   margin-left: 80px;
-  flex: 1; /* Allow the text to take up the remaining space */
+  flex: 1;
 }
 
 .yoga-des h1 {
   font-weight: 500;
-  color: #000000; /* Dark color */
+  color: #000000;
   letter-spacing: 0.5px;
   line-height: 1.2;
   text-transform: capitalize;
   font-family: 'Georgia', serif;
-  font-size: 35PX;
+  font-size: 35px;
 }
 
 .yoga-des p {
@@ -54,7 +54,6 @@
   font-size: 25px;
 }
 
-/* Button styling */
 .button {
   padding: 10px 20px;
   border: none;
@@ -66,21 +65,15 @@
   z-index: 1;
   transition: 5s;
   overflow: hidden;
-  background-color: rgba(224, 171, 171, 0.749); /* Light maroon background */
-
+  background-color: rgba(224, 171, 171, 0.749);
 }
 
-/* First button child */
-
-
-/* Hover effect for button */
 .button:hover {
   background-color: transparent;
-  color: rgb(0, 0, 0); /* Black color on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color change */
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Large screen adjustments */
 @media screen and (min-width: 769px) {
   .yoga-image img {
     width: 400px;
@@ -99,87 +92,43 @@
   }
 }
 
-/* Mobile Responsive Design for screens smaller than 768px */
 @media screen and (max-width: 768px) {
   .yoga {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements */
-    text-align: center; /* Center text for readability */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .yoga-image img {
-    width: 70%; /* Full-width image */
-    height: auto; /* Automatically adjust height */
-    margin: 0; /* Remove side margins */
+    width: 70%;
+    height: auto;
+    margin: 0;
     padding-top: 10px;
   }
 
   .yoga-des {
-    margin-left: 20px; /* Remove margin for mobile */
-    text-align: center; /* Center text on mobile */
+    margin-left: 20px;
+    text-align: center;
   }
 
-  .origin{
+  .origin {
     margin-left: 20px;
     margin-right: 20px;
   }
 
   .click {
-    margin-left: 0; /* Remove side margins for mobile */
-    margin-right: 0; /* Align margins for mobile layout */
-    text-align: center; /* Center text and elements */
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
     font-size: 8px;
     margin-top: 35px;
   }
 
   .button {
-    margin-left: 40%; /* Center the button */
-    margin-top: 20px; /* Add space above button */
-    padding: 12px 24px; /* Adjust padding for mobile */
-    font-size: medium; /* Keep font size readable */
+    margin-left: 40%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: medium;
     margin-bottom: 20px;
   }
-}
-
-/* Mobile screen adjustments */
-@media screen and (max-width: 768px) {
-  .yoga {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements */
-    text-align: center; /* Center text for readability */
-  }
-
-  .yoga-image img {
-    width: 70%; /* Full-width image */
-    height: auto; /* Automatically adjust height */
-    margin: 0; /* Remove side margins */
-    padding-top: 10px;
-  }
-
-  .yoga-des {
-    margin-left: 20px; /* Remove margin for mobile */
-    text-align: center; /* Center text on mobile */
-  }
-
-  .origin{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .click {
-    margin-left: 0; /* Remove side margins for mobile */
-    margin-right: 0; /* Align margins for mobile layout */
-    text-align: center; /* Center text and elements */
-    font-size: 8px;
-    margin-top: 35px;
-  }
-
-  .button {
-    margin-left: 40%; /* Center the button */
-    margin-top: 20px; /* Add space above button */
-    padding: 12px 24px; /* Adjust padding for mobile */
-    font-size: medium; /* Keep font size readable */
-    margin-bottom: 20px;
-  }
-
 }
