@@ -16,9 +16,10 @@ body {
 }
 
 .gallery-item1 {
-  flex: 1 1 calc(33.333% - 20px); /* Three images per row */
+  flex: 1 1 calc(33.333% - 20px);/* Three images per row */
   margin: 10px;
   overflow: hidden; /* Ensures that the image stays within the container during hover */
+  margin-left: 50px;
 }
 
 .gallery-item1 img {
@@ -27,6 +28,9 @@ body {
   display: block;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  gap: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .gallery-item1 img:hover {

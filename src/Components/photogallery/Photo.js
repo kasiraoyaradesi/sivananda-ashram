@@ -16,7 +16,7 @@ const images = [
   '/images/12.jpeg',
   '/images/19.jpeg',
   '/images/20.jpeg',
-  '/images/22.jpeg'
+  // '/images/22.jpeg'
 ];
 
 // Use an arrow function for the Photo component

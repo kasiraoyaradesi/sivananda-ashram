@@ -19,6 +19,7 @@ import Gallery from './Components/home/Gallery';
 import DonatePage from './Components/donate/DonatePage';
 
 
+
 function App() {
   return ( 
     <Router basename="/sivananda-ashram">
