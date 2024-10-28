@@ -35,17 +35,17 @@ const Footer = () => {
         <h4 >Follow Us</h4>
         <ul >
           <li >
-            <a href="https://twitter.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" >
               <FaXTwitter  /> Twitter
             </a>
           </li>
           <li >
-            <a href="https://www.facebook.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" >
               <FaFacebook /> Facebook
             </a>
           </li>
           <li >
-            <a href="https://www.instagram.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
               <FaInstagram /> Instagram
             </a>
           </li>
