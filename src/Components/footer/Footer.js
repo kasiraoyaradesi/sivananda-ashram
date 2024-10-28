@@ -16,14 +16,14 @@ const Footer = () => {
           <p>10, Padmarao Nagar Main Rd, Bapuji Nagar</p>
           <p >Secunderabad, Hyderabad, Telangana 500025</p>
           <div className='soc-id'>
-          <a href="https://www.instagram.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
               <FaInstagram /> 
             </a>
-          <a href="https://twitter.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" >
               <FaXTwitter  /> 
             </a>
 
-            <a href="https://www.facebook.com/AsharamjiBapu" target="_blank" rel="noopener noreferrer" >
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" >
               <FaFacebook />
             </a> 
             </div>   
